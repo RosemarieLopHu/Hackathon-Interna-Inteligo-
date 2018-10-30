@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "directories": {
-    "test": "test"
+    "test": "jest"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,5 +21,8 @@
   "homepage": "https://github.com/RosemarieLopHu/Hackathon-Interna-Inteligo-#readme",
   "devDependencies": {
     "jest": "^23.6.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3"
   }
 }
