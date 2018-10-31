@@ -1,0 +1,24 @@
+.form {
+  justify-content: center;
+  padding: 5px;
+}
+
+.logo {
+  height: 50px;
+}
+
+header{
+  background-color:rgb(35, 62, 153);
+}
+
+.stats {
+  height: 60vh;
+}
+
+.d-flex {
+  justify-content: space-around;
+  margin-bottom: 0;
+}
+/* #carouselExampleControls {
+  background-color: black;
+} */
