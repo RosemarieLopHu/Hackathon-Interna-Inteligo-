@@ -1,3 +1,5 @@
+redirectToForm.addEventListener('click', () => location.href = './index.html');
+
 
 const getPerfil = (callback) => {
     const perfilRequest = new XMLHttpRequest();
