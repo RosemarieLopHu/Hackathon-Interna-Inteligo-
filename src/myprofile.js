@@ -23,7 +23,6 @@ const showData = (data, result) => {
     const showProfile = data[profile]
     // const profile = ;
     if (showProfile.key === result) {
-      console.log('hola')
       showPerfil.innerHTML =
         `
         <h5 class=" text-center">${showProfile.title}</h5>
