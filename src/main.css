@@ -67,3 +67,18 @@ header{
     max-height: 55%;
   }
 }
+.section-index{
+  background-image: url("../assets/img/inteligo.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height:100vh ;
+  color: white;
+  padding-top: 150px;
+}
+
+.title{
+
+  color: white;
+  text-decoration-color: white
+  
+}
