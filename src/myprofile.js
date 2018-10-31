@@ -1,9 +1,5 @@
 redirect.addEventListener('click', () => location.href = './register.html');
 
-const handleError = () => {
-  alert('Se ha presentado un error en la conexión con la data');
-}
-
 const typeProfile = localStorage.getItem('typeProfile')
 
 const showData = (data, result) => {
