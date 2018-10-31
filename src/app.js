@@ -7,17 +7,15 @@ const question5 = document.getElementById('question-5');
 const question6 = document.getElementById('question-6');
 const question7 = document.getElementById('question-7');
 const question8 = document.getElementById('question-8');
-const popModal = document.getElementById('pop-modal');
-const viewProfile = document.getElementById('view-profile')
+const emailImput = document.getElementById('emailImput');
+const viewProfile = document.getElementById('view-profile');
+const alertEmail = document.getElementById('alertEmail');
+
 
 let total1 = 0;
 let total2 = 0;
 
 redirectToForm.addEventListener('click', () => location.href = './formprofile.html');
-viewProfile.addEventListener('click', (e) => {
-  e.preventDefault();
-  location.href = './myprofile.html'
-});
 
 question1.addEventListener('change', (e) => {
   total1 += parseInt(e.target.value);
@@ -41,21 +39,29 @@ question5.addEventListener('change', (e) => {
 
 question6.addEventListener('change', (e) => {
   total2 += parseInt(e.target.value);
-})
+});
 
 question7.addEventListener('change', (e) => {
   total2 += parseInt(e.target.value);
-})
+});
 
 question8.addEventListener('change', (e) => {
   total2 += parseInt(e.target.value);
-})
+});
 
-popModal.addEventListener('click', () => {
-  console.log(total1, total2);
-  defensive(total1, total2);
-  highlyConservative(total1, total2);
-  conservative(total1, total2);
-  moderate(total1, total2);
-  aggressive(total1, total2);
+
+viewProfile.addEventListener('click', () => {
+  const profile = profileSelected(total1, total2);
+  if (!validationEmail(emailImput.value)) {
+    alertEmail.innerHTML = 'Ingrese un email válido'
+  }
+  else {
+    convertFileB64('../assets/doc/perfilInteligo.pdf')
+      .then(result => {
+        sendEmailProfile(emailImput.value, result, profile)
+          .then(result => {
+            location.href = './myprofile.html'
+          })
+      })
+  }
 });

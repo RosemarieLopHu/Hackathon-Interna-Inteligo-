@@ -1,18 +1,18 @@
-redirectToForm.addEventListener('click', () => location.href = './register.html');
+// redirectToForm.addEventListener('click', () => location.href = './register.html');
 
 
-const getPerfil = (callback) => {
-    const perfilRequest = new XMLHttpRequest();
-    perfilRequest.open('GET', `miperfil.json`);
-    perfilRequest.onload = callback;
-    perfilRequest.onerror = handleError;
-    perfilRequest.send();
-  }
+// const getPerfil = (callback) => {
+//     const perfilRequest = new XMLHttpRequest();
+//     perfilRequest.open('GET', `miperfil.json`);
+//     perfilRequest.onload = callback;
+//     perfilRequest.onerror = handleError;
+//     perfilRequest.send();
+//   }
 
-  const showPerfil=()=>{
-    const showPerfil = document.getElementById('container-data');
+//   const showPerfil=()=>{
+//     const showPerfil = document.getElementById('container-data');
 
 
-  }
+//   }
   
 
