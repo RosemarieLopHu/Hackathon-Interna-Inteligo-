@@ -1,43 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="icon" href="../assets/img/favicon-32x32.png" type="image/x-icon">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Registro</title>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-      <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-dark">
-        <a href="../index.html"><img src="../assets/img/Logo azul.jpg" class="logo" alt="logo de Inteligo"></a>
-      </nav>
-    </header>
-    <section class="text-center">
-      <h4 class="m-3">Mi Registro</h4>
-      <form class="form register">
-        <div class="form-group">
-          <input id="name" class="form-control" type="text" placeholder="Ingrese Nombre" arial-label="Ingrese su nombre">
-        </div>
-        <div class="form-group">  
-          <input id="lastname" class="form-control" type="text" placeholder="Ingrese Apellidos" arial-label="Ingrese su apellidos">
-        </div>
-        <div class="form-group">
-          <input id="birth-date" class="form-control" type="date" arial-label="Ingrese su fecha de nacimiento">
-        </div>
-        <div class="form-group">
-          <input id="mobile" class="form-control" type="number" placeholder="Ingrese Teléfono" aria-label="Ingrese su número de teléfono">
-        </div>
-        <div class="form-group">
-          <input id="email" type="email" class="form-control" placeholder="Ingrese email" aria-label="Ingrese su email">
-        </div>
-        <button id="btn-register" class="btn btn-success" type="button">Registrar</button>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../assets/img/favicon-32x32.png" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Registro</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-dark">
+      <a href="../index.html">
+        <img src="../assets/img/Logo azul.jpg" class="logo" alt="logo de Inteligo">
+      </a>
+    </nav>
+  </header>
+  <section class="text-center">
+    <h4 class="m-3">Mi Registro</h4>
+    <form class="form register">
+      <div class="form-group">
+        <input id="name" class="form-control" type="text" placeholder="Ingrese Nombre" arial-label="Ingrese su nombre">
+      </div>
+      <div class="form-group">
+        <input id="lastname" class="form-control" type="text" placeholder="Ingrese Apellidos" arial-label="Ingrese su apellidos">
+      </div>
+      <div class="form-group">
+        <input id="birth-date" class="form-control" type="date" arial-label="Ingrese su fecha de nacimiento">
+      </div>
+      <div class="form-group">
+        <input id="mobile" class="form-control" type="tel" placeholder="Ingrese Teléfono" aria-label="Ingrese su número de teléfono">
+      </div>
+      <div class="form-group">
+        <input id="email" type="email" class="form-control" placeholder="Ingrese email" aria-label="Ingrese su email">
+      </div>
+      <div class="form-group text-left">
+        <label for="gender">Género:</label>
+        <input type="radio" name="gender" value="M" /> Hombre
+        <input type="radio" name="gender" value="F"  /> Mujer
+        </fieldset>
+      </div>
+      <button id="btn-register" class="btn btn-success" type="button">Registrar</button>
     </form>
-    </section>
-    <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
-    <script src="register.js"></script>
-    <script src="firebase.js"></script>
-  </body>
+  </section>
+  <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+  <script src="register.js"></script>
+  <script src="firebase.js"></script>
+  <script src="validation.js"></script>
+</body>
+
 </html>

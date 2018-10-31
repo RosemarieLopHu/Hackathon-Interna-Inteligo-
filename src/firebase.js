@@ -9,7 +9,7 @@ const config = {
 
 firebase.initializeApp(config);
 
-const saveData = (id, name, lastname, birthDate, mobile, email) => {
+const saveData = (id, name, lastname, birthDate, mobile, email, gender) => {
   return firebase.database().ref('investors/' + id)
     .set({
       username: name,
@@ -17,6 +17,7 @@ const saveData = (id, name, lastname, birthDate, mobile, email) => {
       date: birthDate,
       phone: mobile,
       email: email,
+      gender: gender,
       id: id
     });
 }
