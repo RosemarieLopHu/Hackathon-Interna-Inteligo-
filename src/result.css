@@ -1,8 +1,10 @@
-nav {
+.navbar {
   background-color: #233e99;
 }
-
-img{
-  width: 200px; 
-  height: 40px;  
+.logo{
+  width: 200px;
+}
+.table{
+  width: 500px; 
+  height: 400px;  
 }
