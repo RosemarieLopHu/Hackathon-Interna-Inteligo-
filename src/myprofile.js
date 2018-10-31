@@ -12,7 +12,6 @@ const getPerfil = (callback) => {
   perfilRequest.send();
 }
 
-
 const showData = (data) => {
   const showPerfil = document.getElementById('container-data');
   showPerfil.innerHTML = '';
@@ -37,8 +36,8 @@ const selectProfile = () => {
     const moderado = document.getElementById('moderado');
     const defensivo= document.getElementById('defensivo');
     const conservador= document.getElementById('conservador');
-    const altaconservador = document.getElementById('altaconservador');
-  
+    const altaconservador = document.getElementById('altaconservador')
+    
     agresivo.addEventListener('click', (e) => {
       e.preventDefault();        
       const filterProfile = profileView.filter((profile) => {

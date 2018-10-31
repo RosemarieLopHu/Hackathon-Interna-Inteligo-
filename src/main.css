@@ -23,6 +23,11 @@ header{
 .d-flex .position-center {
   justify-content: center;
 }
+
+#alertEmail{
+  text-align: center;
+  color: #f5a147;
+}
 /* #carouselExampleControls {
   background-color: black;
 } */
