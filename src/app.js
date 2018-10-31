@@ -52,17 +52,17 @@ question8.addEventListener('change', (e) => {
 
 viewProfile.addEventListener('click', () => {
   const profile = profileSelected(total1, total2);
-  // if (!validationEmail(emailImput.value)) {
-  //   alertEmail.innerHTML = 'Ingrese un email válido'
-  // }
-  // else {
-  //   convertFileB64('../assets/doc/perfilInteligo.pdf')
-  //     .then(result => {
-  //       sendEmailProfile(emailImput.value, result, profile)
-  //         .then(result => {
+  if (!validationEmail(emailImput.value)) {
+    alertEmail.innerHTML = 'Ingrese un email válido'
+  }
+  else {
+    convertFileB64('../assets/doc/perfilInteligo.pdf')
+      .then(result => {
+        sendEmailProfile(emailImput.value, result, profile)
+          .then(result => {
             localStorage.setItem('typeProfile', profile)
             location.href = './myprofile.html'
-  //         })
-  //     })
-  // }
+          })
+      })
+  }
 });
