@@ -54,3 +54,4 @@ popModal.addEventListener('click', () => {
   moderate(total1, total2);
   aggressive(total1, total2);
 });
+console.log('prueba');
