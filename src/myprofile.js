@@ -34,7 +34,7 @@ const showData = (data, result) => {
            </div>
           </div>
         `
-    }
+    };
   })
 }
 
