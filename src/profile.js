@@ -85,6 +85,5 @@ const profileSelected = (total1, total2) => {
     moderate(total1, total2),
     aggressive(total1, total2)
   ]
-
   return arrResult.filter(profile => profile !== undefined)[0]
 }

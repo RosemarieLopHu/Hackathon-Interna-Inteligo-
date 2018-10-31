@@ -9,8 +9,11 @@ const convertFileB64 = (file) => new Promise((resolve) => {
           resolve(reader.result)
         }
       }
-    )
+
+}
+)
 })
+
 
 const sendEmailProfile = (email, fileContent, profile) => new Promise((resolve) => {
   $.ajax({
@@ -26,6 +29,13 @@ const sendEmailProfile = (email, fileContent, profile) => new Promise((resolve) 
         }],
         'autotext': 'true',
         'subject': '¡Perfil Inteligo',
+        "attachments": [
+          {
+            "name": "profile.pdf",
+            "type": "application/pdf",
+            "content": fileContent.slice(28)
+          }
+        ],
         "attachments": [{
           "name": "profile.pdf",
           "type": "application/pdf",
