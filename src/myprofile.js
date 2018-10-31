@@ -14,12 +14,12 @@ const showData = (data, result) => {
           <div class="row" id=${showProfile.key}>
             <div class="col-md-6">
               <div class="image-container">
-              <img alt="description" src=${showProfile.image} class="img-fluid" alt="Responsive image">
+              <img src=${showProfile.stats} alt="image" class="img-fluid" alt="Responsive image">
               </div>
             </div>
             <div class="col-md-6">
               <div class="image-container">
-              <img src=${showProfile.stats} alt="image" class="img-fluid" alt="Responsive image">
+              <img alt="description" src=${showProfile.image} class="img-fluid" alt="Responsive image">
               </div>
             </div> 
             <div class="col-md-6" >

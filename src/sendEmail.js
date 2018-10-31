@@ -9,13 +9,11 @@ const convertFileB64 = (file) => new Promise((resolve) => {
           resolve(reader.result)
         }
       }
-
-}
-)
-})
+    )
+});
 
 
-const sendEmailProfile = (email, fileContent, profile) => new Promise((resolve) => {
+const sendEmailProfile = (email, fileContent, content) => new Promise((resolve) => {
   $.ajax({
     type: 'POST',
     url: 'https://mandrillapp.com/api/1.0/messages/send.json',
@@ -42,11 +40,8 @@ const sendEmailProfile = (email, fileContent, profile) => new Promise((resolve) 
           "content": fileContent.slice(28)
         }],
 
-        'html': `<p>Estimad@,</p>
-    
-          <p>Gracias por contestar el formulario de preguntas, tu perfil es ${profile}.</p>
-          
-          <p>Te adjuntamos un archivo pdf con el detalle de tu perfil y el portafolio.</p>
+        'html': ` 
+        ${content}
           
           <p>Atentamente Inteligo.</p>`
       }
