@@ -1,4 +1,4 @@
-redirectToForm.addEventListener('click', () => location.href = './index.html');
+redirectToForm.addEventListener('click', () => location.href = './register.html');
 
 
 const getPerfil = (callback) => {
