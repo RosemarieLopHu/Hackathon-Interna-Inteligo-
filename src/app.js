@@ -8,11 +8,16 @@ const question6 = document.getElementById('question-6');
 const question7 = document.getElementById('question-7');
 const question8 = document.getElementById('question-8');
 const popModal = document.getElementById('pop-modal');
+const viewProfile = document.getElementById('view-profile')
 
 let total1 = 0;
 let total2 = 0;
 
-redirectToForm.addEventListener('click', () => location.href = './perfil.html');
+redirectToForm.addEventListener('click', () => location.href = './formprofile.html');
+viewProfile.addEventListener('click', (e) => {
+  e.preventDefault();
+  location.href = './myprofile.html'
+});
 
 question1.addEventListener('change', (e) => {
   total1 += parseInt(e.target.value);

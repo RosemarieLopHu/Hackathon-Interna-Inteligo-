@@ -69,9 +69,11 @@
                   inversión en la búsqueda del retorno.
                 </label>
               </div>
-              <button class="btn btn-primary" href="#carouselExampleControls" type="submit" data-slide="next">
-                Siguiente
-              </button>
+              <div class="d-flex position-center">
+                <button class="btn btn-primary" href="#carouselExampleControls" type="submit" data-slide="next">
+                  Siguiente
+                </button>
+              </div>
             </form>
           </div>
           <div class="carousel-item">
@@ -98,9 +100,14 @@
                   crecimiento de mi inversión
                 </label>
               </div>
+              <div class="d-flex">
+                <button class="btn btn-secondary" href="#carouselExampleControls" role="button" data-slide="prev">
+                  Atrás
+                </button>
               <button class="btn btn-primary" href="#carouselExampleControls" role="button" data-slide="next">
                 Siguiente
               </button>
+              </div>
             </form>
           </div>
           <div class="carousel-item">
@@ -134,9 +141,14 @@
                   Más de 5 años
                 </label>
               </div>
+              <div class="d-flex">
+                <button class="btn btn-secondary" href="#carouselExampleControls" role="button" data-slide="prev">
+                  Atrás
+                </button>
               <button class="btn btn-primary" href="#carouselExampleControls" role="button" data-slide="next">
                 Siguiente
               </button>
+              </div>
             </form>
           </div>
           <div class="carousel-item">
@@ -182,9 +194,14 @@
                   emergencia, dispongo de otros recursos para atenderla.
                 </label>
               </div>
+              <div class="d-flex">
+                <button class="btn btn-secondary" href="#carouselExampleControls" role="button" data-slide="prev">
+                  Atrás
+                </button>
               <button class="btn btn-primary" href="#carouselExampleControls" role="button" data-slide="next">
                 Siguiente
               </button>
+              </div>
             </form>
           </div>
           <div class="carousel-item">
@@ -192,7 +209,9 @@
               5. ¿Con cuál de las siguientes trayectorias hipotéticas en su inversión se
               sentiría más cómodo?
             </h5>
-            <img class="stats" src="../assets/img/Estadistica perfiles.PNG" alt="Estadisticas del rendimiento anual por portafolio" >
+            <figure class="d-flex position-center">
+              <img class="stats" src="../assets/img/Estadistica perfiles.PNG" alt="Estadisticas del rendimiento anual por portafolio" >
+            </figure>
             <form class="form d-flex" id="question-5">
               <div class="form-group form-check">
                 <input type="radio" value="0" name="drone5" id="check51" />
@@ -225,9 +244,14 @@
                 </label>
               </div>
             </form>
+            <div class="d-flex">
+              <button class="btn btn-secondary" href="#carouselExampleControls" role="button" data-slide="prev">
+                Atrás
+              </button>
             <button class="btn btn-primary" href="#carouselExampleControls" role="button" data-slide="next">
               Siguiente
             </button>
+          </div>
           </div>
           <div class="carousel-item">
             <h5 class="ml-2">
@@ -265,9 +289,14 @@
                   portafolio.
                 </label>
               </div>
+              <div class="d-flex">
+                <button class="btn btn-secondary" href="#carouselExampleControls" role="button" data-slide="prev">
+                  Atrás
+                </button>
               <button class="btn btn-primary" href="#carouselExampleControls" role="button" data-slide="next">
                 Siguiente
               </button>
+              </div>
             </form>
           </div>
           <div class="carousel-item">
@@ -306,9 +335,14 @@
                   De 2 a 3 años
                 </label>
               </div>
+              <div class="d-flex">
+                <button class="btn btn-secondary" href="#carouselExampleControls" role="button" data-slide="prev">
+                  Atrás
+                </button>
               <button class="btn btn-primary" href="#carouselExampleControls" role="button" data-slide="next">
                 Siguiente
               </button>
+              </div>
             </form>
           </div>
           <div class="carousel-item">
@@ -317,7 +351,9 @@
               considerando el retorno anual promedio y la máxima caída que se registraría
               en una crisis, ¿cuál de las siguientes opciones te parece la más adecuada?
             </h5>
-            <img src="../assets/img/Retorno anual.png" alt="Tabla del promedio anual de retorno">
+            <figure class="d-flex position-center">
+              <img src="../assets/img/Retorno anual.png" alt="Tabla del promedio anual de retorno">
+            </figure>
             <form class="form d-flex" id="question-8">
               <div class="form-group form-check">
                 <input type="radio" value="0" name="drone8" id="check81" />
@@ -350,34 +386,42 @@
                 </label>
               </div>
             </form>
+            <div class="d-flex">
+              <button class="btn btn-secondary" href="#carouselExampleControls" role="button" data-slide="prev">
+                Atrás
+              </button>
             <button class="btn btn-primary" id="pop-modal" data-toggle="modal" data-target="#viewModal">
               Finalizar
             </button>
-            <div class="modal fade" id="viewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">A continuación se le mostrará su perfil de inversión</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    Ingrese su correo electrónico y le enviaremos la información de su perfil y portafolio óptimo.
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    <form>
-                      <input type="text">
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </div>   
           </div>
         </div>
       </div>
     </section>
+    <!-- modal -->
+    <div class="modal fade" id="viewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">A continuación se le mostrará su perfil de inversión</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Ingrese su correo electrónico y le enviaremos la información de su perfil y portafolio óptimo.
+          </div>
+          <div class="modal-footer">
+            <form class="input-group form">
+                <input type="text" class="form-control" placeholder="Email" arial-label="Ingrese su email">
+              <div class="input-group-append">
+                <button class="btn btn-success" id="view-profile" type="submit">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="redirect-to-form"></div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

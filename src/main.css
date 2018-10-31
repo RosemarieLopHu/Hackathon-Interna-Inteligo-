@@ -12,12 +12,16 @@ header{
 }
 
 .stats {
-  height: 60vh;
+  height: 57vh;
 }
 
 .d-flex {
   justify-content: space-around;
   margin-bottom: 0;
+}
+
+.d-flex .position-center {
+  justify-content: center;
 }
 /* #carouselExampleControls {
   background-color: black;
