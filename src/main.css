@@ -1,6 +1,15 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .form {
   justify-content: center;
   padding: 5px;
+}
+
+img {
+  max-width: 90%;
+  max-height: 25%;
 }
 
 .logo {
@@ -12,21 +21,51 @@ header{
 }
 
 .stats {
-  height: 57vh;
+  max-width: 100%;
+  max-height: 45%;
 }
 
 .d-flex {
+  flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 0;
 }
 
-.d-flex .position-center {
+.position-center {
   justify-content: center;
+}
+
+.register {
+  /* flex-direction: column; */
+  margin: 0 10%;
+}
+
+.carousel-item {
+  padding: 2% 3% ;
+  /* box-sizing: border-box;
+  margin: 3%;  */
 }
 
 #alertEmail{
   text-align: center;
   color: #f5a147;
+}
+
+.btn-primary {
+  background-color: rgb(35, 62, 153);
+  border-color: rgb(35, 62, 153);
+}
+
+@media screen and (min-width: 475px) {
+  img {
+    max-width: 100%;
+    max-height: 50%;
+  }
+  
+  .stats {
+    max-width: 90%;
+    max-height: 55%;
+  }
 }
 /* #carouselExampleControls {
   background-color: black;
