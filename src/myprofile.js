@@ -32,42 +32,52 @@ const showData = (data) => {
 
 const selectProfile = () => {
   getPerfil(() => {
-    const profileView = JSON.parse(event.currentTarget.responseText);
-    
-    
+    const profileView = JSON.parse(event.currentTarget.responseText);    
+    const agresivo = document.getElementById('agresivo');
+    const moderado = document.getElementById('moderado');
+    const defensivo= document.getElementById('defensivo');
+    const conservador= document.getElementById('conservador');
+    const altaconservador = document.getElementById('altaconservador');
+  
+    agresivo.addEventListener('click', (e) => {
+      e.preventDefault();        
+      const filterProfile = profileView.filter((profile) => {
+        return profile.key === 'agresivo';
+      })
+      showData(filterProfile);
+    });
 
+    moderado.addEventListener('click', (e) => {
+      e.preventDefault();        
+      const filterProfile = profileView.filter((profile) => {
+        return profile.key === 'moderado';
+      })
+      showData(filterProfile);
+    });
 
-   
-    
-   
-   
-/* 
-    var day;
-    switch (new Date().getProfile()) {
-      case 0:
-        viewprofile = "";
-        break;
-      case 1:
-        day = "Monday";
-        break;
-      case 2:
-        day = "Tuesday";
-        break;
-      case 3:
-        day = "Wednesday";
-        break;
-      case 4:
-        day = "Thursday";
-        break;
-      case 5:
-        day = "Friday";
-        break;
-      case 6:
-        day = "Saturday";
-    }
-    document.getElementById("demo").innerHTML = "Today is " + day;
+    defensivo.addEventListener('click', (e) => {
+      e.preventDefault();        
+      const filterProfile = profileView.filter((profile) => {
+        return profile.key === 'defensivo';
+      })
+      showData(filterProfile);
+    });
 
- */
+    conservador.addEventListener('click', (e) => {
+      e.preventDefault();        
+      const filterProfile = profileView.filter((profile) => {
+        return profile.key === 'conservador';
+      })
+      showData(filterProfile);
+    });
+
+    altaconservador.addEventListener('click', (e) => {
+      e.preventDefault();        
+      const filterProfile = profileView.filter((profile) => {
+        return profile.key === 'altaconservador';
+      })
+      showData(filterProfile);
+    });
   })
 }
 
