@@ -67,8 +67,14 @@ viewProfile.addEventListener('click', () => {
   else {
     convertFileB64('../assets/doc/perfilInteligo.pdf')
       .then(result => {
-        sendEmailProfile(emailImput.value, result, profile)
+        const content = `
+        <p>Estimad@,</p>
+        <p>Gracias por contestar el formulario de preguntas, tu perfil es ${profile}.</p>
+            <p>Te adjuntamos un archivo pdf con el detalle de tu perfil y el portafolio.</p>`
+        sendEmailProfile(emailImput.value, result, content)
           .then(result => {
+            
+
             localStorage.setItem('typeProfile', profile)
             location.href = './myprofile.html'
           })

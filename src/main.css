@@ -7,11 +7,6 @@ body {
   padding: 5px;
 }
 
-img {
-  max-width: 90%;
-  max-height: 25%;
-}
-
 .logo {
   height: 50px;
 }
@@ -20,9 +15,13 @@ header{
   background-color:rgb(35, 62, 153);
 }
 
-.stats {
-  max-width: 100%;
-  max-height: 45%;
+.custom-radio {
+  padding: 8px;
+  margin-left: 24px;
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-label::before {
+  background-color: #7782a6;
 }
 
 .d-flex {
@@ -56,15 +55,13 @@ header{
   border-color: rgb(35, 62, 153);
 }
 
+.register{
+  color: rgba(24, 24, 24, 0.842);
+}
+
 @media screen and (min-width: 475px) {
-  img {
-    max-width: 100%;
-    max-height: 50%;
-  }
-  
-  .stats {
-    max-width: 90%;
-    max-height: 55%;
+  .register {
+    margin: 0 30%;
   }
 }
 .section-index{
