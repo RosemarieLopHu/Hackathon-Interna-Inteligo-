@@ -18,5 +18,4 @@ registerButton.addEventListener('click', () => {
       email.value = '';
       gender.value = false;
     })
-
 })
