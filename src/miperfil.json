@@ -1,0 +1,37 @@
+[
+    {
+        "key": "Agresivo",
+        "title": "Basado en sus respuestas, le presentamos su perfil de inversión",
+        "image": "../assets/img/agresivo/agresivo1.PNG",
+        "description": "../assets/img/agresivo/agresivo3.PNG" 
+    },
+
+    {
+        "key": "Defensivo",
+        "title":"Basado en sus respuestas, le presentamos su perfil de inversión",
+        "image": "../assets/img/agresivo/agresivo1.PNG",
+        "description": "2/Sobre la base de un back test aplicado a los perfiles para los últimos diez años."
+                       
+    },
+
+    {
+        "key": "Conservador",
+        "title": "Basado en sus respuestas, le presentamos su perfil de inversión",
+        "image": "../assets/img/agresivo/agresivo1.PNG",
+        "description": ""
+    },
+
+    {
+        "key": "Moderado",
+        "title": "Basado en sus respuestas, le presentamos su perfil de inversión",
+        "image": "../assets/img/agresivo/agresivo1.PNG",
+        "description": ""
+    }
+    
+    {
+        "key": "Altamente Conservador",
+        "title": "Basado en sus respuestas, le presentamos su perfil de inversión",
+        "image": "../assets/img/agresivo/agresivo1.PNG",
+        "description": ""
+    }
+]
