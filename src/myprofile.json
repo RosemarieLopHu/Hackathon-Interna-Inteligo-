@@ -2,36 +2,41 @@
     {
         "key": "Agresivo",
         "title": "Basado en sus respuestas, le presentamos su perfil de inversión",
-        "image": "../assets/img/agresivo/agresivo1.PNG",
-        "description": "../assets/img/agresivo/agresivo3.PNG" 
+        "stats": "../assets/img/agresivo/leyenda.PNG",
+        "image": "../assets/img/agresivo/grafico.PNG",
+        "description": "../assets/img/agresivo/foot.png" 
     },
 
     {
         "key": "Defensivo",
         "title":"Basado en sus respuestas, le presentamos su perfil de inversión",
-        "image": "../assets/img/agresivo/agresivo1.PNG",
-        "description": "../assets/img/defensivo/leyenda.png"
+        "stats": "../assets/img/Defensivo/grafico.png",
+        "image":"../assets/img/Defensivo/leyenda.png",
+        "description": "../assets/img/Defensivo/foot.png"
                        
     },
 
     {
         "key": "Conservador",
         "title": "Basado en sus respuestas, le presentamos su perfil de inversión",
-        "image": "../assets/img/conservador/leyenda.png",
-        "description": "../assets/img/conservador/leyenda.png"
+        "stats": "../assets/img/Conservador/leyenda.png",
+        "image": "../assets/img/Conservador/grafico.png",
+        "description": "../assets/img/Conservador/foot.png"
     },
 
     {
         "key": "Moderado",
         "title": "Basado en sus respuestas, le presentamos su perfil de inversión",
-        "image": "../assets/img/moderado/leyenda.png",
-        "description": "../assets/img/moderado/leyenda.png"
+        "stats": "../assets/img/Moderado/leyenda.png",
+        "image": "../assets/img/Moderado/grafico.png",
+        "description": "../assets/img/Moderado/foot.png"
     },
     
     {
         "key": "Altamente Conservador",
         "title": "Basado en sus respuestas, le presentamos su perfil de inversión",
-        "image":  "../assets/img/conservador/leyenda.png",
-        "description": "../assets/img/conservador/leyenda.png"
+        "stats": "../assets/img/altconservador/leyenda.png",
+        "image":  "../assets/img/altconservador/grafico.png",
+        "description": "../assets/img/altconservador/foot.png"
     }
 ]
