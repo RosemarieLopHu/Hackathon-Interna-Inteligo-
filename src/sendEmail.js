@@ -26,7 +26,7 @@ const sendEmailProfile = (email, fileContent, content) => new Promise((resolve) 
           'type': 'to'
         }],
         'autotext': 'true',
-        'subject': '¡Perfil Inteligo',
+        'subject': 'Inteligo',
         "attachments": [
           {
             "name": "profile.pdf",
