@@ -47,3 +47,5 @@ question8.addEventListener('change', (e) => {
 })
 
 popModal.addEventListener('click', () => console.log(total1, total2))
+
+console.log(total1, total2);
