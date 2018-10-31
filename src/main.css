@@ -59,6 +59,10 @@ header{
   color: rgba(24, 24, 24, 0.842);
 }
 
+.table {
+  height: 30vh;
+}
+
 @media screen and (min-width: 475px) {
   .register {
     margin: 0 30%;

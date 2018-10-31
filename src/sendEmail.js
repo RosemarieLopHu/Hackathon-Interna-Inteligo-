@@ -29,7 +29,7 @@ const sendEmailProfile = (email, fileContent, content) => new Promise((resolve) 
         'subject': 'Inteligo',
         "attachments": [
           {
-            "name": "profile.pdf",
+            "name": "inteligo.pdf",
             "type": "application/pdf",
             "content": fileContent.slice(28)
           }
