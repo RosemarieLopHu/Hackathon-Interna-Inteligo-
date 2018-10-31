@@ -9,11 +9,8 @@ const convertFileB64 = (file) => new Promise((resolve) => {
           resolve(reader.result)
         }
       }
-
-}
-)
+    )
 })
-
 
 const sendEmailProfile = (email, fileContent, profile) => new Promise((resolve) => {
   $.ajax({
