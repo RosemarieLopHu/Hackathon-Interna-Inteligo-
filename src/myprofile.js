@@ -12,7 +12,6 @@ const showData = (data, result) => {
   arrProfiles.forEach(profile => {
     const showProfile = data[profile]
     if (showProfile.key === result) {
-      console.log('hola')
       showPerfil.innerHTML =
         `
         <h5 class=" text-center">${showProfile.title}</h5>
